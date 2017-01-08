@@ -1,0 +1,54 @@
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  height: 100vh;
+	font-family: 'Open Sans', sans-serif;
+}
+.container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	flex: 1;
+}
+h2 {
+	padding: 3.125em 0;
+	font-weight: 700;
+	font-style: italic;
+}
+
+#btn-quote{
+  padding:0.5em;
+  margin:2.125em 0;
+  background-color:#337ab7;
+  color:#fff;
+  text-decoration:none;
+  border-radius:7px;
+}
+
+#btn-quote:hover{
+  background-color:#23297A;
+}
+
+blockquote{
+  background-color:#f9f9f9;
+  border-left: 10px solid #ccc;
+  margin:1.5em 10px;
+  padding:0.5em 10px;
+  quotes: '\201C''\201D''\2018''\2019';
+}
+
+blockquote:before{
+  color:#ccc;
+  content:open-quote;
+  font-size:4em;
+  line-height:0.1em;
+  margin-right:0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p,blockquote span {
+  padding:0.938em 0;
+}
+.load {
+	padding: 6.250em 0;
+}
