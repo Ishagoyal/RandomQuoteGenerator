@@ -11,11 +11,14 @@ $(document).ready(function (){
 });
 
  function getQuote(){
-  $.ajax({
+ 
+  $.ajax({ 
+
     url:'http://api.forismatic.com/api/1.0/?',
     dataType:'jsonp',
-    data : "method=getQuote&format=jsonp&lang=en&jsonp=?",
+    data : 'method=getQuote&format=jsonp&lang=en&jsonp=?',
     success: function(response){
+	  console.log(response);
       $('.load').hide();
       $('blockquote').show();
       $('#quoteText').html(response.quoteText);
